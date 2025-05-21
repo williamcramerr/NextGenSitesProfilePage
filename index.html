@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Will Cramer | Profile</title>
+
+  <!-- AOS for scroll animations -->
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --bg: #000;
+      --fg: #fff;
+      --accent: #10b981;
+      --card-bg: #1f2937;
+      --border: #10b981;
+      --text-light: #d1d5db;
+      --text-muted: #6b7280;
+    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body { background: var(--bg); color: var(--fg); font-family:sans-serif; }
+    .container { max-width:900px; margin: auto; padding:1rem; }
+    section { margin-bottom:3rem; }
+    .text-center { text-align:center; }
+    h2 { color: var(--accent); margin-bottom:1rem; }
+
+    /* Profile */
+    #profile {
+      background: var(--card-bg);
+      border: 2px solid var(--border);
+      border-radius:12px;
+      padding:2rem;
+      text-align:center;
+    }
+    #profile img {
+      width:150px; height:150px;
+      border-radius:50%;
+      border:3px solid var(--accent);
+      margin-bottom:1rem;
+    }
+    #profile h2 { font-size:1.75rem; color: var(--accent); }
+    #profile p { color: var(--text-light); margin-top:0.5rem; }
+
+    /* Grid cards */
+    .grid { display:grid; gap:1rem; }
+    .grid-3 { grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); }
+    .card {
+      background: var(--card-bg);
+      border:1px solid var(--border);
+      border-radius:8px;
+      padding:1.5rem;
+      text-align:center;
+    }
+    .card h3 { color: var(--text-light); margin-bottom:0.5rem; }
+    .card p { margin-bottom:0.5rem; }
+    .price { font-size:2rem; color:var(--accent); }
+
+    /* Features */
+    .features { display:flex; flex-wrap:wrap; gap:1rem; }
+    .feature {
+      display:flex; align-items:start; gap:0.75rem;
+      flex:1 1 calc(50% - 1rem);
+    }
+    .feature-icon {
+      background: var(--accent);
+      color: var(--bg);
+      border-radius:50%;
+      padding:0.5rem;
+      font-size:1.2rem;
+    }
+    .feature h4 { color: var(--text-light); margin-bottom:0.25rem; }
+    .feature p { color: var(--text-muted); font-size:0.9rem; }
+
+    /* Badges */
+    .badges { display:flex; flex-wrap:wrap; justify-content:center; gap:0.5rem; }
+    .badge {
+      background: var(--accent);
+      color: var(--bg);
+      padding:0.3rem 0.75rem;
+      border-radius:9999px;
+      font-size:0.85rem;
+    }
+
+    /* Social */
+    .social { display:flex; justify-content:center; gap:1rem; margin-top:1rem; }
+    .social a { color: var(--accent); font-size:1.5rem; transition: transform 0.2s; }
+    .social a:hover { transform: scale(1.2); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Profile summary -->
+    <section id="profile" data-aos="fade-up">
+      <img src="grad-pic.jpg" alt="Will Cramer"/>
+      <h2>Will Cramer / Vice President</h2>
+      <p>B.S. Cyber Operations (Law & Policy) @ University of Arizona, graduated <em>cum laude</em></p>
+      <p>Cybersecurity & Compliance Consultant specializing in compliance automation, threat intelligence, and AI-driven security.</p>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section data-aos="fade-up">
+      <h2 class="text-center">Pricing Plans</h2>
+
+      <h3 class="text-center" style="margin:1rem 0; color:var(--accent)">Core Pricing</h3>
+      <div class="grid grid-3">
+        <div class="card" data-aos="fade-up"><h3>Starter Site</h3><p>3-page site</p><p class="price">$799</p></div>
+        <div class="card" data-aos="fade-up" data-aos-delay="100"><h3>Business Pro</h3><p>5–7 pages</p><p class="price">$1,499</p></div>
+        <div class="card" data-aos="fade-up" data-aos-delay="200"><h3>E-Commerce</h3><p>Online store setup</p><p class="price">$2,799+</p></div>
+      </div>
+
+      <h3 class="text-center" style="margin:2rem 0; color:var(--accent)">Ongoing Support Plans</h3>
+      <div class="grid grid-3">
+        <div class="card"><h3>Core Hosting</h3><p class="price">$59/mo</p><p>Free SSL, performance tuning, hands-off maintenance</p></div>
+        <div class="card"><h3>Growth Support</h3><p class="price">$119/mo</p><p>Monthly updates, speed & security</p></div>
+        <div class="card"><h3>Full-Service</h3><p class="price">$229/mo</p><p>Unlimited edits, SEO reports, priority support</p></div>
+      </div>
+    </section>
+
+    <!-- Feature Highlights -->
+    <section data-aos="fade-up">
+      <h2>Feature Highlights</h2>
+      <div class="features">
+        <div class="feature" data-aos="fade-up">
+          <div class="feature-icon">⏱️</div>
+          <div><h4>24/7 Monitoring</h4><p>Real-time alerts & proactive threat mitigation.</p></div>
+        </div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon">📊</div>
+          <div><h4>Custom Analytics</h4><p>Dashboards for performance & security metrics.</p></div>
+        </div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon">⚡</div>
+          <div><h4>Priority Support</h4><p>Guaranteed 24h SLA & dedicated assistance.</p></div>
+        </div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-icon">🤖</div>
+          <div><h4>AI-Driven Automation</h4><p>Predictive maintenance & automated compliance.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="text-center" data-aos="fade-up">
+      <h2>Certifications & Abilities</h2>
+      <div class="badges">
+        <span class="badge">Google IT Support Professional</span>
+        <span class="badge">IBM Cybersecurity Specialist</span>
+        <span class="badge">ISC2 Cybersecurity Specialist</span>
+        <span class="badge">Microsoft Cybersecurity Analyst</span>
+        <span class="badge">Google Cybersecurity Professional</span>
+        <span class="badge">Meta Front End Web Development</span>
+        <span class="badge">Google IT Automation with Python</span>
+      </div>
+    </section>
+
+    <!-- Social Links -->
+    <section class="social" data-aos="fade-up">
+      <a href="https://www.linkedin.com/in/williamcramer1/" target="_blank" rel="noopener noreferrer">🔗</a>
+      <a href="https://github.com/williamcramerr" target="_blank" rel="noopener noreferrer">🐙</a>
+      <a href="mailto:williamcramerr@outlook.com">📧</a>
+    </section>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init({ once:true, duration:800 });</script>
+</body>
+</html>
